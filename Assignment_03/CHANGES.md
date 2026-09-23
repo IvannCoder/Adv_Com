@@ -1,6 +1,6 @@
 # Assignment 03 — CHANGES
 
-**Name:** ______________________  **Student ID:** ______________________
+**Name:** Hein Thura Naung  **Student ID:** 6705140056
 
 This is the written part of your submission. Explain **what you changed and why**, then record your **prompt log**. Keep before/after snippets to a line or two.
 
