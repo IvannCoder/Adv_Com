@@ -30,9 +30,11 @@ Record **every** prompt where AI helped. If you wrote a part yourself, say so in
 
 | # | My prompt to the AI | What it suggested (summary) | Accept / reject / edited | How I checked it |
 |---|---|---|---|---|
-| 1 | "How can I structure the Product and OrderItem classes with composition and constructor validation?" | Suggested basic classes with `__init__` validation for `quantity < 1`. | Accepted | Checked that invalid quantities raise errors and script runs cleanly |
-| 2 | "Help me refactor the tier `if/elif` chains into a polymorphic class family." | Suggested a base `Customer` class with subclasses and a dictionary mapping approach. | Edited | Verified that calculated points and discounts matched the original logic |
-| 3 | "Why did my self-test fail on line 12 with a blank line difference?" | Pointed out the exact trailing newline and spacing needed in the receipt builder. | Accepted | Added the extra newline, re-ran the self-test, and got PASS |
+| 1 | "Can you explain why refactoring is important and assist me step-by-step to refactor this code without doing everything for me? Just guide me and explain the concepts." | Explained the core goals of refactoring (improving design without changing behavior) and set up a step-by-step coaching workflow for the assignment. | Accepted | Read through the principles to understand what constraints to keep in mind before writing code. |
+| 2 | "How can I structure the Product and OrderItem classes with composition and constructor validation?" | Suggested basic classes with `__init__` validation for `quantity < 1`. | Accepted | Checked that invalid quantities raise errors and script runs cleanly |
+| 3 | "How do I make the Order methods return pure numbers instead of printing, while still keeping a separate function for the receipt output?" | Suggested splitting the math into individual methods like `calculate_subtotal()` and handling the string formatting separately in `build_receipt()`. | Accepted | Verified that calculations returned clean numbers and printed output stayed identical |
+| 4 | "Help me refactor the tier `if/elif` chains into a polymorphic class family." | Suggested a base `Customer` class with subclasses and a dictionary mapping approach. | Edited | Verified that calculated points and discounts matched the original logic |
+| 5 | "Why did my self-test fail on line 12 with a blank line difference?" | Pointed out the exact trailing newline and spacing needed in the receipt builder. | Accepted | Added the extra newline, re-ran the self-test, and got PASS |
 
 **Ownership statement.** *By submitting, I confirm I understand and can explain every line of code I submitted, and that this prompt log reflects my actual AI use.*
 
